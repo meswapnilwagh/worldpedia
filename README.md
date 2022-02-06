@@ -1,1 +1,1 @@
-# Wolrd Data Package
+# World Data Package
