@@ -1,6 +1,7 @@
-import * as Continents from './modules/continents';
-import * as Subregions from './modules/subregions';
-import * as Countries from './modules/countries';
-import * as States from './modules/states';
+import * as Continent from './modules/continents';
+import * as Subregion from './modules/subregions';
+import * as Country from './modules/countries';
+import * as State from './modules/states';
+import * as City from './modules/cities';
 
-export { Continents,Subregions,Countries };
+export { Continent ,Subregion,Country,State,City };
