@@ -1,6 +1,6 @@
 import { IContinent } from "../interfaces";
 
-export const continentList:Array<IContinent> = [
+export const continentList:IContinent[] = [
     {
         "code": "AF",
         "name": "Africa"

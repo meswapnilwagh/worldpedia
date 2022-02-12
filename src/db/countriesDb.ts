@@ -1,6 +1,6 @@
 import { ICountry } from '../interfaces';
 
-export const countryList: Array<ICountry> =[
+export const countryList: ICountry[] =[
     {
         "id": 1,
         "name": "Afghanistan",

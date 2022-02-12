@@ -1,5 +1,5 @@
 {
-  "name": "world-data",
+  "name": "worldpedia",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meswapnilwagh/world-data.git"
+    "url": "git+https://github.com/meswapnilwagh/worldpedia.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/meswapnilwagh/world-data/issues"
+    "url": "https://github.com/meswapnilwagh/worldpedia/issues"
   },
-  "homepage": "https://github.com/meswapnilwagh/world-data#readme",
+  "homepage": "https://github.com/meswapnilwagh/worldpedia#readme",
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "jest": "^27.5.0",

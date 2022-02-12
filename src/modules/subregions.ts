@@ -5,9 +5,9 @@ import { subregionList } from '../db/subregionsDb';
 /**
  * Get all subregions
  *
- * @return {*}  {Array<ISubregion>}
+ * @return {*}  {ISubregion[]}
  */
-const getAllSubregions = (): Array<ISubregion> => {
+const getAllSubregions = (): ISubregion[] => {
     return subregionList;
 }
 
@@ -17,11 +17,11 @@ const getAllSubregions = (): Array<ISubregion> => {
  * @param {string} continentCode
  * @return {*}  {(ISubregion | undefined)}
  */
-const getSubregionsByContinentCode = (continentCode: string): Array<ISubregion> | undefined => {
-    return _.filter(subregionList, [ "continent_code", continentCode ]);
+const getAllSubregionByContinent = (continentCode: string): ISubregion[] | undefined => {
+    return _.filter(subregionList, ["continent_code", continentCode]);
 }
 
-export { 
-    getAllSubregions, 
-    getSubregionsByContinentCode 
+export {
+    getAllSubregions,
+    getAllSubregionByContinent
 };

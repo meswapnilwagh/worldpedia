@@ -1,6 +1,6 @@
 import { ISubregion } from "../interfaces";
 
-export const subregionList:Array<ISubregion> = [
+export const subregionList:ISubregion[] = [
     {
         "name": "Southern Asia",
         "continent": "Asia",

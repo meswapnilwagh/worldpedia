@@ -1,7 +1,7 @@
 export interface IContinent {
     name: string;
     code: string;
-    getAllContinents?(): Array<IContinent>;
+    getAllContinents?(): IContinent[];
     getContinentByCode?(code: string): IContinent;
 }
 
@@ -9,8 +9,8 @@ export interface ISubregion {
     name: string;
     continent: string;
     continent_code: string;
-    getAllSubregions?(): Array<ISubregion>;
-    getSubregionsByContinentCode?(continentCode: string): Array<ISubregion>;
+    getAllSubregions?(): ISubregion[];
+    getSubregionsByContinentCode?(continentCode: string): ISubregion[];
 }
 
 export interface ICountry {
@@ -28,13 +28,17 @@ export interface ICountry {
   native?: string | null;
   subregion: string;
   timezones: Timezone[];
-  translations: Object;
+  translations: object;
   latitude: string;
   longitude: string;
   emoji: string;
   emojiU: string;
   continent: string;
   continent_code: string;
+  getAllCountries?(): ICountry[];
+  getCountryByCode?(code: string): ICountry;
+  getAllCountriesByContinent?(continentCode: string): ICountry[];
+  getAllCountriesBySubregion?(subregion: string): ICountry[];
 }
 
 interface Timezone {
@@ -51,6 +55,9 @@ export interface IState {
   countryCode: string;
   latitude: string | null;
   longitude: string | null;
+  getAllStates?(): IState[];
+  getAllStatesByCountry?(countryCode: string): IState[];
+  getStateByCodeAndCountry?(isoCode: string, countryCode: string): IState;
 }
 
 export interface ICity {
@@ -59,4 +66,7 @@ export interface ICity {
   stateCode: string;
   latitude: string | null;
   longitude: string | null;
+  getAllCities?(): ICity[];
+  getAllCitiesByCountry?(countryCode: string): ICity[];
+  getAllCitiesOfState?(stateCode: string,countryCode:string): ICity[];
 }
