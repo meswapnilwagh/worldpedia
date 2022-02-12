@@ -1,6 +1,6 @@
 import { IState } from "../interfaces";
 
-export const stateList:Array<IState> = [
+export const stateList:IState[] = [
     {
         "name": "Southern Nations, Nationalities, and Peoples' Region",
         "isoCode": "SN",

@@ -5,24 +5,24 @@ import { continentList } from '../db/continentsDb';
 /**
  * Get all continents
  *
- * @return {*}  {Array<IContinent>}
+ * @return {*}  {IContinent[]}
  */
-const getAllContinents = (): Array<IContinent> => {
+const getAllContinents = (): IContinent[] => {
     return continentList;
 }
 
 /**
- *Get continent by code
+ * Get continent by code
  *
  * @param {string} code
  * @return {*}  {(IContinent | undefined)}
  */
 const getContinentByCode = (code: string): IContinent | undefined => {
-    return _.find(continentList, [ "code", code ]);
+    return _.find(continentList, ["code", code]);
 }
 
-export { 
-    getAllContinents, 
-    getContinentByCode 
+export {
+    getAllContinents,
+    getContinentByCode
 };
 

@@ -5,9 +5,9 @@ import {ICity} from '../interfaces';
 /**
  * get all cities
  *
- * @return {*}  {Array<ICity>}
+ * @return {*}  {ICity[]}
  */
-const getAllCities = (): Array<ICity> => {
+const getAllCities = (): ICity[] => {
     return cityList;
 }
 
@@ -16,13 +16,25 @@ const getAllCities = (): Array<ICity> => {
  *
  * @param {string} stateCode
  * @param {string} countryCode
- * @return {*}  {Array<ICity>}
+ * @return {*}  {ICity[]}
  */
-const getCitiesOfState = (stateCode: string,countryCode:string): Array<ICity> => {
-    return _.filter(cityList,{stateCode:stateCode,countryCode:countryCode});
+const getAllCitiesOfState = (stateCode: string,countryCode:string): ICity[] => {
+    return _.filter(cityList,{stateCode,countryCode});
 }
 
+/**
+ * get all cities of state by state code & country code
+ *
+ * @param {string} stateCode
+ * @param {string} countryCode
+ * @return {*}  {ICity[]}
+ */
+
+const getAllCitiesByCountry = (countryCode: string): ICity[] => {
+    return _.filter(cityList,{countryCode});
+}
 export {
     getAllCities,
-    getCitiesOfState
+    getAllCitiesOfState,
+    getAllCitiesByCountry
 };
