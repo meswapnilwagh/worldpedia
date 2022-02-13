@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon",
     "test": "jest --config jestconfig.json",
-    "build": "rimraf ./lib tsc -p tsconfig.json",
+    "build": "rimraf ./lib && tsc -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
