@@ -1,6 +1,6 @@
 {
   "name": "worldpedia",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/meswapnilwagh/worldpedia.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/meswapnilwagh/worldpedia/issues"
   },
@@ -43,7 +43,9 @@
     "lib/**/*"
   ],
   "keywords": [
+    "worldpedia",
     "world-data",
+    "world-data-api",
     "Continent",
     "Country",
     "State",
