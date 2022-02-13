@@ -22,9 +22,8 @@ const getAllCitiesOfState = (stateCode: string,countryCode:string): ICity[] => {
 }
 
 /**
- * get all cities of state by state code & country code
+ * get all cities of state by country code
  *
- * @param {string} stateCode
  * @param {string} countryCode
  * @return {*}  {ICity[]}
  */

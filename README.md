@@ -11,6 +11,7 @@ Get a list of countries of specific continents, get a list of states of countrie
 <img src="https://img.shields.io/github/issues/meswapnilwagh/worldpedia?logo=github&style=for-the-badge"/>
 
 </p>
+
 # ⚙️ Install
 
 `npm i worldpedia`
