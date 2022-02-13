@@ -1,4 +1,3 @@
-import * as _ from 'lodash';
 import { stateList } from '../db/statesDb';
 import { IState } from '../interfaces';
 
@@ -18,7 +17,7 @@ const getAllStates = (): IState[] => {
  * @return {*}  {IState[]}
  */
 const getAllStatesByCountry = (countryCode: string): IState[] => {
-    return _.filter(stateList,['countryCode',countryCode]);
+    return stateList.filter(state => state.countryCode === countryCode);
 }
 
 /**
@@ -29,7 +28,7 @@ const getAllStatesByCountry = (countryCode: string): IState[] => {
  * @return {*}  {(IState | undefined)}
  */
 const getStateByCodeAndCountry = (isoCode: string, countryCode: string): IState | undefined => {
-    return _.find(stateList,{isoCode,countryCode})
+    return stateList.find(state => state.isoCode === isoCode && state.countryCode === countryCode);
 }
 
 export {

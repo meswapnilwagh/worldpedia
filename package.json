@@ -54,6 +54,5 @@
   ],
   "author": "Swapnil Abhimanyu Wagh",
   "dependencies": {
-    "lodash": "^4.17.21"
   }
 }

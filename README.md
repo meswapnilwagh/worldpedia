@@ -1,41 +1,33 @@
-<<<<<<< HEAD
-# Worldpedia
-
-> “Worldpedia” is javascript library that will give you access to data of Continents, Subregions, Country, States & Cities
-=======
-# Worldpedia [readme]
-
-# Worldpedia
+# 🌏 Worldpedia
 
 > “Worldpedia” is javascript library that will give you access to data of Continents, Subregions, Country, States & Cities
 > 
->>>>>>> 62d3682db749d4fda56b833647ca6a75d1a6f624
 
 Get a list of countries of specific continents, get a list of states of countries, get a list of cities of states, countries belonging to specific subregion.
 
-# Install
+<p align="center">
+<img src="https://img.shields.io/npm/dw/worldpedia?logo=npm&style=for-the-badge"/>
+<img src="https://img.shields.io/npm/v/worldpedia?logo=npm&style=for-the-badge"/>
+<img src="https://img.shields.io/github/issues/meswapnilwagh/worldpedia?logo=github&style=for-the-badge"/>
+
+</p>
+
+# ⚙️ Install
 
 `npm i worldpedia`
 
-<<<<<<< HEAD
-# Available modules
-=======
-# Usage
+# 🔭 Usage
 
 ```jsx
 import  { City, Continent, Country, State, Subregion } from 'worldpedia';
 ```
 
 ## Available modules
->>>>>>> 62d3682db749d4fda56b833647ca6a75d1a6f624
 
 1. Continent
 2. Subregion
 3. Country
 4. State
-<<<<<<< HEAD
-5. City
-=======
 5. City
 
 ## Continent
@@ -404,4 +396,15 @@ This function accept country code as a parameter and return all cities of the co
 	...
 ]
 ```
->>>>>>> 62d3682db749d4fda56b833647ca6a75d1a6f624
+# ✍️ How to Contribute
+- Clone repo and create a new branch: $ git checkout https://github.com/meswapnilwagh/worldpedia -b branch-name.
+- Make changes and test
+- Submit Pull Request with comprehensive description of changes
+
+# 👨‍💻 Author
+### Swapnil Abhimanyu Wagh
+
+<p align="left">
+<a href="https://meswapnilwagh.com" target="blank"><img src="https://img.shields.io/badge/Blog-meswapnilwagh.com-green?style=for-the-badge&logo=hashnode" alt="meswapnilwagh" /></a> 
+<a href="https://twitter.com/meswapnilwagh" target="blank"><img src="https://img.shields.io/twitter/follow/meswapnilwagh?logo=twitter&style=for-the-badge" alt="meswapnilwagh" /></a>
+</p>

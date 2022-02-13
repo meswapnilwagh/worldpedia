@@ -1,6 +1,5 @@
-import * as _ from 'lodash';
-import { IContinent } from '../interfaces';
 import { continentList } from '../db/continentsDb';
+import { IContinent } from '../interfaces';
 
 /**
  * Get all continents
@@ -18,7 +17,7 @@ const getAllContinents = (): IContinent[] => {
  * @return {*}  {(IContinent | undefined)}
  */
 const getContinentByCode = (code: string): IContinent | undefined => {
-    return _.find(continentList, ["code", code]);
+    return continentList.find(continent => continent.code === code);
 }
 
 export {
