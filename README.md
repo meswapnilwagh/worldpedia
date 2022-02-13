@@ -1,5 +1,9 @@
 # 🌏 Worldpedia
 
+![image](https://user-images.githubusercontent.com/4816238/153756023-94f0dd8f-d286-403b-968a-078940d5cdf3.png)
+
+
+
 > “Worldpedia” is javascript library that will give you access to data of Continents, Subregions, Country, States & Cities
 > 
 
@@ -14,7 +18,9 @@ Get a list of countries of specific continents, get a list of states of countrie
 
 # ⚙️ Install
 
-`npm i worldpedia`
+```
+npm i worldpedia
+```
 
 # 🔭 Usage
 
@@ -87,8 +93,8 @@ This function accept `continentCode` as a parameter and return the single instan
 
 ```jsx
 {
-		"code": "AS",
-		"name": "Asia"
+	"code": "AS",
+	"name": "Asia"
 }
 
 ```
