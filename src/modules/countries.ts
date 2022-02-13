@@ -1,6 +1,5 @@
-import * as _ from 'lodash';
-import { ICountry } from '../interfaces';
 import { countryList } from '../db/countriesDb';
+import { ICountry } from '../interfaces';
 
 /**
  * Get all countries
@@ -18,9 +17,7 @@ const getAllCountries = (): ICountry[] => {
  * @return {*}  {(ICountry | undefined)}
  */
 const getCountryByCode = (code: string): ICountry | undefined => {
-    return _.find(countryList, ["iso3", code])
-        ? _.find(countryList, ["iso3", code])
-        : _.find(countryList, ["iso2", code]);
+    return countryList.find(country => country.iso2 === code || country.iso3 === code);
 }
 
 /**
@@ -30,7 +27,7 @@ const getCountryByCode = (code: string): ICountry | undefined => {
  * @return {*}  {(ICountry[])}
  */
 const getAllCountriesByContinent = (continentCode: string): ICountry[] => {
-    return _.filter(countryList, ["continent_code", continentCode]);
+    return countryList.filter(country => country.continent_code === continentCode);
 }
 
 /**
@@ -40,7 +37,7 @@ const getAllCountriesByContinent = (continentCode: string): ICountry[] => {
  * @return {*}  {ICountry[]}
  */
 const getAllCountriesBySubregion = (subregion: string): ICountry[] => {
-    return _.filter(countryList, ["subregion", subregion]);
+    return countryList.filter(country => country.subregion === subregion);
 }
 
 export {

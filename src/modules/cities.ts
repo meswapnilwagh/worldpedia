@@ -1,6 +1,5 @@
-import * as _ from 'lodash';
-import {cityList} from '../db/citiesDb';
-import {ICity} from '../interfaces';
+import { cityList } from '../db/citiesDb';
+import { ICity } from '../interfaces';
 
 /**
  * get all cities
@@ -19,7 +18,7 @@ const getAllCities = (): ICity[] => {
  * @return {*}  {ICity[]}
  */
 const getAllCitiesOfState = (stateCode: string,countryCode:string): ICity[] => {
-    return _.filter(cityList,{stateCode,countryCode});
+    return cityList.filter(city => city.stateCode === stateCode && city.countryCode === countryCode);
 }
 
 /**
@@ -31,8 +30,9 @@ const getAllCitiesOfState = (stateCode: string,countryCode:string): ICity[] => {
  */
 
 const getAllCitiesByCountry = (countryCode: string): ICity[] => {
-    return _.filter(cityList,{countryCode});
+    return cityList.filter(city => city.countryCode === countryCode);
 }
+
 export {
     getAllCities,
     getAllCitiesOfState,

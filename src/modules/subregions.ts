@@ -1,6 +1,5 @@
-import * as _ from 'lodash';
-import { ISubregion } from '../interfaces';
 import { subregionList } from '../db/subregionsDb';
+import { ISubregion } from '../interfaces';
 
 /**
  * Get all subregions
@@ -18,7 +17,7 @@ const getAllSubregions = (): ISubregion[] => {
  * @return {*}  {(ISubregion | undefined)}
  */
 const getAllSubregionByContinent = (continentCode: string): ISubregion[] | undefined => {
-    return _.filter(subregionList, ["continent_code", continentCode]);
+    return subregionList.filter(subregion => subregion.continent_code === continentCode);
 }
 
 export {
