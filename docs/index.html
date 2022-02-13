@@ -1,0 +1,210 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>worldpedia</title><meta name="description" content="Documentation for worldpedia"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">worldpedia</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>worldpedia</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#🌏-worldpedia" id="🌏-worldpedia" style="color: inherit; text-decoration: none;">
+  <h1>🌏 Worldpedia</h1>
+</a>
+<p><img src="https://user-images.githubusercontent.com/4816238/153756023-94f0dd8f-d286-403b-968a-078940d5cdf3.png" alt="image"></p>
+<blockquote>
+<p>“Worldpedia” is javascript library that will give you access to data of Continents, Subregions, Country, States &amp; Cities</p>
+</blockquote>
+<p>Get a list of countries of specific continents, get a list of states of countries, get a list of cities of states, countries belonging to specific subregion.</p>
+<p align="center">
+<img src="https://img.shields.io/npm/dw/worldpedia?logo=npm&style=for-the-badge"/>
+<img src="https://img.shields.io/npm/v/worldpedia?logo=npm&style=for-the-badge"/>
+<img src="https://img.shields.io/github/issues/meswapnilwagh/worldpedia?logo=github&style=for-the-badge"/>
+
+</p>
+
+
+<a href="#⚙️-install" id="⚙️-install" style="color: inherit; text-decoration: none;">
+  <h1>⚙️ Install</h1>
+</a>
+<pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">i</span><span class="hl-1"> </span><span class="hl-0">worldpedia</span>
+</code></pre>
+
+<a href="#🔭-usage" id="🔭-usage" style="color: inherit; text-decoration: none;">
+  <h1>🔭 Usage</h1>
+</a>
+<pre><code class="language-jsx"><span class="hl-2">import</span><span class="hl-1">  { </span><span class="hl-0">City</span><span class="hl-1">, </span><span class="hl-0">Continent</span><span class="hl-1">, </span><span class="hl-0">Country</span><span class="hl-1">, </span><span class="hl-0">State</span><span class="hl-1">, </span><span class="hl-0">Subregion</span><span class="hl-1"> } </span><span class="hl-2">from</span><span class="hl-1"> </span><span class="hl-3">&#39;worldpedia&#39;</span><span class="hl-1">;</span>
+</code></pre>
+
+<a href="#available-modules" id="available-modules" style="color: inherit; text-decoration: none;">
+  <h2>Available modules</h2>
+</a>
+<ol>
+<li>Continent</li>
+<li>Subregion</li>
+<li>Country</li>
+<li>State</li>
+<li>City</li>
+</ol>
+
+<a href="#continent" id="continent" style="color: inherit; text-decoration: none;">
+  <h2>Continent</h2>
+</a>
+<p>Following functions are available in the continent module</p>
+
+<a href="#getallcontinents" id="getallcontinents" style="color: inherit; text-decoration: none;">
+  <h3>getAllContinents()</h3>
+</a>
+<hr>
+<p>This function returns all the available continents
+<strong>Type:</strong> <code>IContinent[ ]</code></p>
+<p><strong>Output:</strong></p>
+<pre><code class="language-jsx"><span class="hl-1">[</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AF&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Africa&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AN&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Antarctica&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AS&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Asia&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;EU&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Europe&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;NA&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;North america&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;OC&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Oceania&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;SA&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;South america&quot;</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">]</span>
+</code></pre>
+
+<a href="#getcontinentbycodecontinentcode" id="getcontinentbycodecontinentcode" style="color: inherit; text-decoration: none;">
+  <h3>getContinentByCode(continentCode)</h3>
+</a>
+<hr>
+<p>This function accept <code>continentCode</code> as a parameter and return the single instance of <code>IContienent</code> matching with the parameter
+<strong>Type:</strong> <code>IContinent | undefined</code></p>
+<p><strong>Output:</strong></p>
+<pre><code class="language-jsx"><span class="hl-1">{</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;code&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;AS&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;name&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;Asia&quot;</span><br/><span class="hl-1">}</span><br/>
+</code></pre>
+
+<a href="#subregion" id="subregion" style="color: inherit; text-decoration: none;">
+  <h2>Subregion</h2>
+</a>
+<p>Following function are available in the subregion module</p>
+
+<a href="#getallsubregion" id="getallsubregion" style="color: inherit; text-decoration: none;">
+  <h3>getAllSubregion()</h3>
+</a>
+<hr>
+<p>This function returns all the subregions
+<strong>Type:</strong> <code>ISubregion[] | []</code></p>
+<p><strong>Output:</strong></p>
+<pre><code class="language-jsx"><span class="hl-1">[</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1">  </span><span class="hl-3">&quot;Southern Asia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent&quot;</span><span class="hl-0">:</span><span class="hl-1">  </span><span class="hl-3">&quot;Asia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent_code&quot;</span><span class="hl-0">:</span><span class="hl-1">  </span><span class="hl-3">&quot;AS&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1">  </span><span class="hl-3">&quot;Northern Europe&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent&quot;</span><span class="hl-0">:</span><span class="hl-1">  </span><span class="hl-3">&quot;Europe&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent_code&quot;</span><span class="hl-0">:</span><span class="hl-1">  </span><span class="hl-3">&quot;EU&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    ...</span><br/><span class="hl-1">]</span><br/>
+</code></pre>
+
+<a href="#getallsubregionbycontinentcontinentcode" id="getallsubregionbycontinentcontinentcode" style="color: inherit; text-decoration: none;">
+  <h3>getAllSubregionByContinent(continentCode)</h3>
+</a>
+<hr>
+<p>This function accepts the <code>continentCode</code> as a parameter and returns the list of all subregions belonging to the <code>continentCode</code></p>
+<p><strong>Type:</strong> <code>ISubregions[] | []</code></p>
+<p><strong>Output:</strong></p>
+<pre><code class="language-jsx"><span class="hl-1">[</span><br/><span class="hl-1">    { </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Southern Asia&quot;</span><span class="hl-1">, </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Asia&quot;</span><span class="hl-1">, </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent_code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AS&quot;</span><span class="hl-1"> </span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    { </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Western Asia&quot;</span><span class="hl-1">, </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Asia&quot;</span><span class="hl-1">, </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent_code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AS&quot;</span><span class="hl-1"> </span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;South-eastern Asia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Asia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent_code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AS&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    { </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Eastern Asia&quot;</span><span class="hl-1">, </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Asia&quot;</span><span class="hl-1">, </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent_code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AS&quot;</span><span class="hl-1"> </span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    { </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Central Asia&quot;</span><span class="hl-1">, </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Asia&quot;</span><span class="hl-1">, </span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent_code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AS&quot;</span><span class="hl-1"> </span><br/><span class="hl-1">    }</span><br/><span class="hl-1">]</span>
+</code></pre>
+
+<a href="#country" id="country" style="color: inherit; text-decoration: none;">
+  <h2>Country</h2>
+</a>
+<p>Following function are available in the country module</p>
+
+<a href="#getallcountries" id="getallcountries" style="color: inherit; text-decoration: none;">
+  <h3>getAllCountries()</h3>
+</a>
+<hr>
+<p>This function returns all the countries</p>
+<p><strong>Type:</strong> <code>ICountry[] | []</code></p>
+<p><strong>Output:</strong> </p>
+<pre><code class="language-jsx"><span class="hl-1">[</span><br/><span class="hl-1">        {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;id&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-4">1</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afghanistan&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;iso3&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AFG&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;iso2&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AF&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;numeric_code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;004&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;phone_code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;93&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;capital&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Kabul&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;currency&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AFN&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;currency_name&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afghan afghani&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;currency_symbol&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;؋&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;tld&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;.af&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;native&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;افغانستان&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;subregion&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Southern Asia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;timezones&quot;</span><span class="hl-0">:</span><span class="hl-1"> [</span><br/><span class="hl-1">            {</span><br/><span class="hl-1">                </span><span class="hl-3">&quot;zoneName&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Asia/Kabul&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                </span><span class="hl-3">&quot;gmtOffset&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-4">16200</span><span class="hl-1">,</span><br/><span class="hl-1">                </span><span class="hl-3">&quot;gmtOffsetName&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;UTC+04:30&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                </span><span class="hl-3">&quot;abbreviation&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AFT&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                </span><span class="hl-3">&quot;tzName&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afghanistan Time&quot;</span><br/><span class="hl-1">            }</span><br/><span class="hl-1">        ],</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;translations&quot;</span><span class="hl-0">:</span><span class="hl-1"> {</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;kr&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;아프가니스탄&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;br&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afeganistão&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;pt&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afeganistão&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;nl&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afghanistan&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;hr&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afganistan&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;fa&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;افغانستان&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;de&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afghanistan&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;es&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afganistán&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;fr&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afghanistan&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;ja&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;アフガニスタン&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;it&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Afghanistan&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;cn&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;阿富汗&quot;</span><br/><span class="hl-1">        },</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;latitude&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;33.00000000&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;longitude&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;65.00000000&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;emoji&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;🇦🇫&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;emojiU&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;U+1F1E6 U+1F1EB&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Asia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;continent_code&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;AS&quot;</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">        ...</span><br/><span class="hl-1">]</span>
+</code></pre>
+
+<a href="#getcountrybycodecodestring" id="getcountrybycodecodestring" style="color: inherit; text-decoration: none;">
+  <h3>getCountryByCode(code:string)</h3>
+</a>
+<hr>
+<p>This function accept country code as a parameter and return the single instance of <code>ICountry</code> matching with the parameter</p>
+<p><strong>Type:</strong> <code>ICountry | undefined</code></p>
+<p><strong>Output:</strong> </p>
+<pre><code class="language-jsx"><br/><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;name&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;India&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;iso3&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;IND&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;iso2&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;IN&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;numeric_code&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;356&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;phone_code&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;91&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;capital&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;New Delhi&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;currency&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;INR&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;currency_name&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;Indian rupee&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;currency_symbol&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;₹&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;tld&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;.in&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;native&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;भारत&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;subregion&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;Southern Asia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;timezones&quot;</span><span class="hl-1">: [</span><br/><span class="hl-1">        {</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;zoneName&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Asia/Kolkata&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;gmtOffset&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-4">19800</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;gmtOffsetName&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;UTC+05:30&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;abbreviation&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;IST&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">            </span><span class="hl-3">&quot;tzName&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Indian Standard Time&quot;</span><br/><span class="hl-1">        }</span><br/><span class="hl-1">    ],</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;translations&quot;</span><span class="hl-1">: {</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;kr&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;인도&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;br&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Índia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;pt&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Índia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;nl&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;India&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;hr&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Indija&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;fa&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;هند&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;de&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Indien&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;es&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;India&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;fr&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;Inde&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;ja&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;インド&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;it&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;India&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">&quot;cn&quot;</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-3">&quot;印度&quot;</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;latitude&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;20.00000000&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;longitude&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;77.00000000&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;emoji&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;🇮🇳&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;emojiU&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;U+1F1EE U+1F1F3&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;continent&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;Asia&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;continent_code&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;AS&quot;</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#getallcountriesbycontinentcontinentcode-string" id="getallcountriesbycontinentcontinentcode-string" style="color: inherit; text-decoration: none;">
+  <h3>getAllCountriesByContinent(continentCode: string)</h3>
+</a>
+<hr>
+<p>This function accept continent code as a parameter and return all countries of the continents</p>
+<p><strong>Type:</strong> <code>ICountry[] | []</code></p>
+
+<a href="#getallcountriesbysubregionsubregion-string" id="getallcountriesbysubregionsubregion-string" style="color: inherit; text-decoration: none;">
+  <h3>getAllCountriesBySubregion(subregion: string)</h3>
+</a>
+<hr>
+<p>This function accept subregion name as a parameter and return all countries of the subregion</p>
+<p><strong>Type:</strong> <code>ICountry[] | []</code></p>
+
+<a href="#state" id="state" style="color: inherit; text-decoration: none;">
+  <h2>State</h2>
+</a>
+<p>Following function are available in the state module</p>
+
+<a href="#getallstates" id="getallstates" style="color: inherit; text-decoration: none;">
+  <h3>getAllStates()</h3>
+</a>
+<hr>
+<p>This function returns all the states</p>
+<p><strong>Type:</strong> <code>IState[] | []</code></p>
+
+<a href="#getallstatesbycountrycountrycode-string" id="getallstatesbycountrycountrycode-string" style="color: inherit; text-decoration: none;">
+  <h3>getAllStatesByCountry(countryCode: string)</h3>
+</a>
+<hr>
+<p>This function accept country code as a parameter and return all states of the country</p>
+<p><strong>Type:</strong> <code>IState[] | []</code></p>
+
+<a href="#getstatebycodeandcountrystatecode-string-countrycode-string" id="getstatebycodeandcountrystatecode-string-countrycode-string" style="color: inherit; text-decoration: none;">
+  <h3>getStateByCodeAndCountry(stateCode: string, countryCode: string)</h3>
+</a>
+<hr>
+<p>This function accept state iso code and country code as a parameter and return the single instance of the <code>IState</code></p>
+<p><strong>Type:</strong> <code>IState | undefined</code></p>
+<p><strong>Output:</strong></p>
+<pre><code class="language-jsx"><span class="hl-1">{</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;name&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;Maharashtra&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;isoCode&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;MH&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;countryCode&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;IN&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;latitude&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;19.75147980&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">&quot;longitude&quot;</span><span class="hl-1">: </span><span class="hl-3">&quot;75.71388840&quot;</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#city" id="city" style="color: inherit; text-decoration: none;">
+  <h2>City</h2>
+</a>
+<p>Following function are available in the city module</p>
+
+<a href="#getallcities" id="getallcities" style="color: inherit; text-decoration: none;">
+  <h3>getAllCities()</h3>
+</a>
+<hr>
+<p>This function returns all the cities</p>
+<p><strong>Type:</strong> <code>ICity[] | []</code></p>
+
+<a href="#getallcitiesofstatestatecode-string-countrycode-string" id="getallcitiesofstatestatecode-string-countrycode-string" style="color: inherit; text-decoration: none;">
+  <h3>getAllCitiesOfState(stateCode: string, countryCode: string)</h3>
+</a>
+<hr>
+<p>This function accept state Code and country code as a parameter and return all cities of the states.</p>
+<p><strong>Type:</strong> <code>ICity[] | []</code></p>
+
+<a href="#getallcitiesbycountrycountrycode-string" id="getallcitiesbycountrycountrycode-string" style="color: inherit; text-decoration: none;">
+  <h3>getAllCitiesByCountry(countryCode: string)</h3>
+</a>
+<hr>
+<p>This function accept country code as a parameter and return all cities of the country.</p>
+<p><strong>Type:</strong> <code>ICity[] | []</code></p>
+<p><strong>Output:</strong></p>
+<pre><code class="language-jsx"><span class="hl-1">[</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-3">&#39;Achalpur&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">countryCode:</span><span class="hl-1"> </span><span class="hl-3">&#39;IN&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">stateCode:</span><span class="hl-1"> </span><span class="hl-3">&#39;MH&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">latitude:</span><span class="hl-1"> </span><span class="hl-3">&#39;21.25665000&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">longitude:</span><span class="hl-1"> </span><span class="hl-3">&#39;77.51006000&#39;</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-3">&#39;Ahiri&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">countryCode:</span><span class="hl-1"> </span><span class="hl-3">&#39;IN&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">stateCode:</span><span class="hl-1"> </span><span class="hl-3">&#39;MH&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">latitude:</span><span class="hl-1"> </span><span class="hl-3">&#39;19.41386000&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">longitude:</span><span class="hl-1"> </span><span class="hl-3">&#39;80.00359000&#39;</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-3">&#39;Ahmadnagar&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">countryCode:</span><span class="hl-1"> </span><span class="hl-3">&#39;IN&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">stateCode:</span><span class="hl-1"> </span><span class="hl-3">&#39;MH&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">latitude:</span><span class="hl-1"> </span><span class="hl-3">&#39;19.09457000&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">longitude:</span><span class="hl-1"> </span><span class="hl-3">&#39;74.73843000&#39;</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">    ...</span><br/><span class="hl-1">]</span>
+</code></pre>
+
+<a href="#✍️-how-to-contribute" id="✍️-how-to-contribute" style="color: inherit; text-decoration: none;">
+  <h1>✍️ How to Contribute</h1>
+</a>
+<ul>
+<li>Clone repo and create a new branch: <pre><code><span class="hl-0">$</span><span class="hl-1"> </span><span class="hl-0">git</span><span class="hl-1"> </span><span class="hl-0">checkout</span><span class="hl-1"> </span><span class="hl-5">https</span><span class="hl-1">:</span><span class="hl-6">//github.com/meswapnilwagh/worldpedia -b branch-name</span>
+</code></pre>
+</li>
+<li>Make changes and test</li>
+<li>Submit Pull Request with comprehensive description of changes</li>
+</ul>
+
+<a href="#👨💻-author" id="👨💻-author" style="color: inherit; text-decoration: none;">
+  <h1>👨‍💻 Author</h1>
+</a>
+
+<a href="#swapnil-abhimanyu-wagh" id="swapnil-abhimanyu-wagh" style="color: inherit; text-decoration: none;">
+  <h3>Swapnil Abhimanyu Wagh</h3>
+</a>
+<p align="left">
+<a href="https://meswapnilwagh.com" target="blank"><img src="https://img.shields.io/badge/Blog-meswapnilwagh.com-green?style=for-the-badge&logo=hashnode" alt="meswapnilwagh" /></a> 
+<a href="https://twitter.com/meswapnilwagh" target="blank"><img src="https://img.shields.io/twitter/follow/meswapnilwagh?logo=twitter&style=for-the-badge" alt="meswapnilwagh" /></a>
+</p>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li><li class=" tsd-kind-namespace"><a href="modules/City.html">City</a></li><li class=" tsd-kind-namespace"><a href="modules/Continent.html">Continent</a></li><li class=" tsd-kind-namespace"><a href="modules/Country.html">Country</a></li><li class=" tsd-kind-namespace"><a href="modules/State.html">State</a></li><li class=" tsd-kind-namespace"><a href="modules/Subregion.html">Subregion</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
