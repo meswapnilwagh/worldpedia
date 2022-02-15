@@ -35,6 +35,7 @@ export interface ICountry {
   emojiU: string;
   continent: string;
   continent_code: string;
+  flag:string;
   getAllCountries?(): ICountry[];
   getCountryByCode?(code: string): ICountry;
   getAllCountriesByContinent?(continentCode: string): ICountry[];
