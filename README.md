@@ -1,13 +1,9 @@
 # 🌏 Worldpedia
 
-![image](https://user-images.githubusercontent.com/4816238/153756023-94f0dd8f-d286-403b-968a-078940d5cdf3.png)
-
-
-
 > “Worldpedia” is javascript library that will give you access to data of Continents, Subregions, Country, States & Cities
 > 
 
-Get a list of countries of specific continents, get a list of states of countries, get a list of cities of states, countries belonging to specific subregion.
+![image](https://user-images.githubusercontent.com/4816238/153756023-94f0dd8f-d286-403b-968a-078940d5cdf3.png)
 
 <p align="center">
 <img src="https://img.shields.io/npm/dw/worldpedia?logo=npm&style=for-the-badge"/>
@@ -15,6 +11,15 @@ Get a list of countries of specific continents, get a list of states of countrie
 <img src="https://img.shields.io/github/issues/meswapnilwagh/worldpedia?logo=github&style=for-the-badge"/>
 
 </p>
+
+# ⛳ Features 
+
+- Get a list of countries of specific continents
+- Get a list of states of countries 
+- Get a list of cities of states
+- Get countries belonging to specific subregion
+
+
 
 # ⚙️ Install
 
