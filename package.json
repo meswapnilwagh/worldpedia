@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/meswapnilwagh/worldpedia/issues"
   },
-  "homepage": "https://projects.meswapnilwagh.com/worldpedia",
+  "homepage": "https://worldpedia-demo.vercel.app/",
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "@types/lodash": "^4.14.178",
@@ -55,6 +55,5 @@
     "Filter"
   ],
   "author": "Swapnil Abhimanyu Wagh",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
