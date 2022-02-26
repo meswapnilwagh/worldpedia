@@ -1,6 +1,6 @@
 {
   "name": "worldpedia",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "🌏 Worldpedia is javascript library that will give you access to data of Continents, Subregions, Country, States & Cities",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
