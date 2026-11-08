@@ -1,5 +1,5 @@
-import { continentList } from '../db/continentsDb';
-import { IContinent } from '../interfaces';
+import { continentList } from "../db/continentsDb";
+import type { IContinent } from "../interfaces";
 
 /**
  * Get all continents
@@ -7,8 +7,8 @@ import { IContinent } from '../interfaces';
  * @return {*}  {IContinent[]}
  */
 const getAllContinents = (): IContinent[] => {
-    return continentList;
-}
+	return continentList;
+};
 
 /**
  * Get continent by code
@@ -17,11 +17,7 @@ const getAllContinents = (): IContinent[] => {
  * @return {*}  {(IContinent | undefined)}
  */
 const getContinentByCode = (code: string): IContinent | undefined => {
-    return continentList.find(continent => continent.code === code);
-}
-
-export {
-    getAllContinents,
-    getContinentByCode
+	return continentList.find((continent) => continent.code === code);
 };
 
+export { getAllContinents, getContinentByCode };

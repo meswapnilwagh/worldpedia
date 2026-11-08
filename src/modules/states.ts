@@ -1,5 +1,5 @@
-import { stateList } from '../db/statesDb';
-import { IState } from '../interfaces';
+import { stateList } from "../db/statesDb";
+import type { IState } from "../interfaces";
 
 /**
  * Get all states
@@ -7,8 +7,8 @@ import { IState } from '../interfaces';
  * @return {*}  {IState[]}
  */
 const getAllStates = (): IState[] => {
-    return stateList;
-}
+	return stateList;
+};
 
 /**
  * get all states of country by country code
@@ -17,8 +17,8 @@ const getAllStates = (): IState[] => {
  * @return {*}  {IState[]}
  */
 const getAllStatesByCountry = (countryCode: string): IState[] => {
-    return stateList.filter(state => state.countryCode === countryCode);
-}
+	return stateList.filter((state) => state.countryCode === countryCode);
+};
 
 /**
  * get state by state code and country code
@@ -27,12 +27,13 @@ const getAllStatesByCountry = (countryCode: string): IState[] => {
  * @param {string} countryCode
  * @return {*}  {(IState | undefined)}
  */
-const getStateByCodeAndCountry = (isoCode: string, countryCode: string): IState | undefined => {
-    return stateList.find(state => state.isoCode === isoCode && state.countryCode === countryCode);
-}
-
-export {
-    getAllStates,
-    getAllStatesByCountry,
-    getStateByCodeAndCountry
+const getStateByCodeAndCountry = (
+	isoCode: string,
+	countryCode: string,
+): IState | undefined => {
+	return stateList.find(
+		(state) => state.isoCode === isoCode && state.countryCode === countryCode,
+	);
 };
+
+export { getAllStates, getAllStatesByCountry, getStateByCodeAndCountry };

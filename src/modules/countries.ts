@@ -1,5 +1,5 @@
-import { countryList } from '../db/countriesDb';
-import { ICountry } from '../interfaces';
+import { countryList } from "../db/countriesDb";
+import type { ICountry } from "../interfaces";
 
 /**
  * Get all countries
@@ -7,18 +7,20 @@ import { ICountry } from '../interfaces';
  * @return {*}  {IArray<ICountry>}
  */
 const getAllCountries = (): ICountry[] => {
-    return countryList;
-}
+	return countryList;
+};
 
 /**
- * get country by iso2 or iso3 code 
- * 
+ * get country by iso2 or iso3 code
+ *
  * @param {string} code
  * @return {*}  {(ICountry | undefined)}
  */
 const getCountryByCode = (code: string): ICountry | undefined => {
-    return countryList.find(country => country.iso2 === code || country.iso3 === code);
-}
+	return countryList.find(
+		(country) => country.iso2 === code || country.iso3 === code,
+	);
+};
 
 /**
  * get all country by continent code
@@ -27,8 +29,10 @@ const getCountryByCode = (code: string): ICountry | undefined => {
  * @return {*}  {(ICountry[])}
  */
 const getAllCountriesByContinent = (continentCode: string): ICountry[] => {
-    return countryList.filter(country => country.continent_code === continentCode);
-}
+	return countryList.filter(
+		(country) => country.continent_code === continentCode,
+	);
+};
 
 /**
  * Get all countries of region
@@ -37,12 +41,12 @@ const getAllCountriesByContinent = (continentCode: string): ICountry[] => {
  * @return {*}  {ICountry[]}
  */
 const getAllCountriesBySubregion = (subregion: string): ICountry[] => {
-    return countryList.filter(country => country.subregion === subregion);
-}
+	return countryList.filter((country) => country.subregion === subregion);
+};
 
 export {
-    getAllCountries,
-    getCountryByCode,
-    getAllCountriesByContinent,
-    getAllCountriesBySubregion
+	getAllCountries,
+	getCountryByCode,
+	getAllCountriesByContinent,
+	getAllCountriesBySubregion,
 };

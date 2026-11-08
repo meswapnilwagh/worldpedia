@@ -1,5 +1,5 @@
-import { subregionList } from '../db/subregionsDb';
-import { ISubregion } from '../interfaces';
+import { subregionList } from "../db/subregionsDb";
+import type { ISubregion } from "../interfaces";
 
 /**
  * Get all subregions
@@ -7,8 +7,8 @@ import { ISubregion } from '../interfaces';
  * @return {*}  {ISubregion[]}
  */
 const getAllSubregions = (): ISubregion[] => {
-    return subregionList;
-}
+	return subregionList;
+};
 
 /**
  * get all subregions by continent code
@@ -16,11 +16,12 @@ const getAllSubregions = (): ISubregion[] => {
  * @param {string} continentCode
  * @return {*}  {(ISubregion | undefined)}
  */
-const getAllSubregionByContinent = (continentCode: string): ISubregion[] | undefined => {
-    return subregionList.filter(subregion => subregion.continent_code === continentCode);
-}
-
-export {
-    getAllSubregions,
-    getAllSubregionByContinent
+const getAllSubregionByContinent = (
+	continentCode: string,
+): ISubregion[] | undefined => {
+	return subregionList.filter(
+		(subregion) => subregion.continent_code === continentCode,
+	);
 };
+
+export { getAllSubregions, getAllSubregionByContinent };

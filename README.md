@@ -8,8 +8,8 @@ Get a list of countries of specific continents, get a list of states of countrie
 <p align="center">
 <img src="https://img.shields.io/npm/dw/worldpedia?logo=npm&style=for-the-badge"/>
 <img src="https://img.shields.io/npm/v/worldpedia?logo=npm&style=for-the-badge"/>
-<img src="https://img.shields.io/github/issues/meswapnilwagh/worldpedia?logo=github&style=for-the-badge"/>
-
+<img src="https://img.shields.io/github/actions/workflow/status/meswapnilwagh/worldpedia/ci.yml?branch=master&style=for-the-badge&logo=github"/>
+<a href="https://bundlephobia.com/package/worldpedia"><img src="https://img.shields.io/bundlephobia/minzip/worldpedia?style=for-the-badge&label=size"/></a>
 </p>
 # ⚙️ Install
 
@@ -18,7 +18,19 @@ Get a list of countries of specific continents, get a list of states of countrie
 # 🔭 Usage
 
 ```jsx
-import  { City, Continent, Country, State, Subregion } from 'worldpedia';
+// 🚨 Warning: Importing the entire library loads 25MB+ of data into memory.
+import { City, Continent, Country, State, Subregion } from 'worldpedia';
+```
+
+## ⚡ Recommended Usage (Memory Efficient)
+To vastly decrease your bundle size and memory usage, you should import only the exact modules that you need via sub-path exports.
+
+```jsx
+import * as Continent from 'worldpedia/continents';
+import * as Subregion from 'worldpedia/subregions';
+import * as Country from 'worldpedia/countries';
+import * as State from 'worldpedia/states';
+import * as City from 'worldpedia/cities';
 ```
 
 ## Available modules
@@ -407,3 +419,7 @@ This function accept country code as a parameter and return all cities of the co
 <a href="https://meswapnilwagh.com" target="blank"><img src="https://img.shields.io/badge/Blog-meswapnilwagh.com-green?style=for-the-badge&logo=hashnode" alt="meswapnilwagh" /></a> 
 <a href="https://twitter.com/meswapnilwagh" target="blank"><img src="https://img.shields.io/twitter/follow/meswapnilwagh?logo=twitter&style=for-the-badge" alt="meswapnilwagh" /></a>
 </p>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="jimmyylim" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jimmyylim?trk=profile-badge">Jimmy Lim</a></div>
+              

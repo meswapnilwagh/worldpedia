@@ -1,15 +1,42 @@
 {
   "name": "worldpedia",
   "version": "1.0.0",
-  "description": "",
+  "description": "Javascript library that gives access to data of Continents, Subregions, Countries, States & Cities.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./cities": {
+      "types": "./lib/modules/cities.d.ts",
+      "default": "./lib/modules/cities.js"
+    },
+    "./states": {
+      "types": "./lib/modules/states.d.ts",
+      "default": "./lib/modules/states.js"
+    },
+    "./countries": {
+      "types": "./lib/modules/countries.d.ts",
+      "default": "./lib/modules/countries.js"
+    },
+    "./continents": {
+      "types": "./lib/modules/continents.d.ts",
+      "default": "./lib/modules/continents.js"
+    },
+    "./subregions": {
+      "types": "./lib/modules/subregions.d.ts",
+      "default": "./lib/modules/subregions.js"
+    }
+  },
   "scripts": {
-    "test": "jest --config jestconfig.json",
+    "test": "bun test",
     "build": "tsc -p tsconfig.json",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json",
-    "prepare": "npm run build",
+    "format": "biome format --write ./src",
+    "lint": "biome lint ./src",
+    "update-data": "bun run scripts/update-data.ts",
+    "prepare": "bun run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
@@ -25,28 +52,26 @@
   },
   "homepage": "https://github.com/meswapnilwagh/worldpedia#readme",
   "devDependencies": {
-    "@types/jest": "^27.4.0",
-    "jest": "^27.5.0",
-    "prettier": "^2.5.1",
-    "ts-jest": "^27.1.3",
-    "tslint": "^6.1.3",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^4.5.5"
+    "@biomejs/biome": "^2.4.7",
+    "@types/node": "^25.5.0",
+    "typescript": "^5.9.3"
   },
   "files": [
     "lib/**/*"
   ],
   "keywords": [
     "world-data",
-    "Continent",
-    "Country",
-    "State",
-    "City",
-    "GeoLocation",
-    "Search",
-    "Filter"
+    "geospatial",
+    "continent",
+    "country",
+    "state",
+    "city",
+    "geolocation",
+    "countries-database",
+    "states-cities",
+    "geographic",
+    "location-data",
+    "offline-database"
   ],
-  "author": "Swapnil Abhimanyu Wagh",
-  "dependencies": {
-  }
+  "author": "Swapnil Abhimanyu Wagh"
 }
